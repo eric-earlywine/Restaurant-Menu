@@ -14,7 +14,8 @@ public class MyRestaurant {
         MenuItem item7 = new MenuItem("6 Chocolate Chip Cookies", 4.50, "Delicious cookies","Dessert");
         MenuItem item8 = new MenuItem("Pecan Pie", 3.50, "Delicious pie","Dessert");
         ArrayList<MenuItem> myItems = new ArrayList<>(Arrays.asList(item1, item2, item3, item4, item5, item6, item7, item8));
-        Menu myMenu = new Menu(myItems);
+        Menu myMenu = new Menu("Eric's restaurant");
+        myMenu.add(myItems);
         myMenu.displayMenu();
 
         myMenu.add(new MenuItem("Fries", 2.99, "Delicious fries", "Snack"), "Snack");
